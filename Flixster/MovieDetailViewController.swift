@@ -4,12 +4,15 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
     // Outlets
+    
+    
     @IBOutlet weak var moviePosterImageView: UIImageView!
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieOverviewLabel: UILabel!
     @IBOutlet weak var voteCountLabel: UILabel!
     @IBOutlet weak var voteAverageLabel: UILabel!
     @IBOutlet weak var popularityLabel: UILabel!
+    
 
     // The movie property to be set before the segue
     var movie: Movie?
@@ -22,11 +25,11 @@ class MovieDetailViewController: UIViewController {
     func loadMovieDetails() {
         guard let movie = movie else { return }
 
-        movieTitleLabel.text = movie.title
-        movieOverviewLabel.text = movie.overview
-        voteCountLabel.text = "Votes: \(movie.voteCount)"
-        voteAverageLabel.text = "Average: \(movie.voteAverage)"
-        popularityLabel.text = "Popularity: \(movie.popularity)"
+        movieTitleLabel?.text = movie.title
+        movieOverviewLabel?.text = movie.overview
+        voteCountLabel?.text = "Votes: \(movie.voteCount)"
+        voteAverageLabel?.text = "Average: \(movie.voteAverage)"
+        popularityLabel?.text = "Popularity: \(movie.popularity)"
 
         // Load the movie poster image
         let posterBaseURL = "https://image.tmdb.org/t/p/w500"

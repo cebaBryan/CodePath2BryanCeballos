@@ -3,9 +3,13 @@
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var movieTitleLabel: UILabel!
+    
     @IBOutlet weak var movieOverviewLabel: UILabel!
+
     @IBOutlet weak var moviePosterImageView: UIImageView!
+    
     
     func configure(with movie: Movie) {
         movieTitleLabel.text = movie.title
@@ -42,3 +46,4 @@ class MovieTableViewCell: UITableViewCell {
         }.resume()
     }
 }
+

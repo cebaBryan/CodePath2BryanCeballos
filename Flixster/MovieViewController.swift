@@ -16,6 +16,9 @@ class MovieViewController: UITableViewController {
         super.viewDidLoad()
         setupActivityIndicator()
         fetchMovies()
+        
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     func setupActivityIndicator() {
