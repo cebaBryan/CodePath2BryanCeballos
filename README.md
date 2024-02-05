@@ -1,26 +1,26 @@
-# Project 2 - *Name of App Here*
+# Project 2 - *Flixster*
 
-Submitted by: **Your Name Here**
+Submitted by: **Bryan Ceballos**
 
-**Name of your app** is a movie browsing app that... [TODO] 
+**Flixster** is a movie browsing app that allows the user to scroll through movies to see which ones are popular and to see if they are worth watching. 
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] Users are able to see a customized app icon and launch screen
-- [ ] Displays at least 5 different movies in a table view
-- [ ] Can tap into detail view of movie with a full description, backdrop image, and title
+- [X] Users are able to see a customized app icon and launch screen
+- [X] Displays at least 5 different movies in a table view
+- [X] Can tap into detail view of movie with a full description, backdrop image, and title
  
 The following **optional** features are implemented:
 
-- [ ] Unique UI changes, such as background, font/color changes, etc.
-- [ ] User implements a collection view
-- [ ] User implemenets tab bar controller with at least two screens
-- [ ] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [ ] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
+- [X] Unique UI changes, such as background, font/color changes, etc.
+- [X] User implements a collection view
+- [X] User implemenets tab bar controller with at least two screens
+- [X] Your app should work for any screen size and orientation using AutoLayout constraints
+  - [X] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
 
 The following **additional** features are implemented:
 
