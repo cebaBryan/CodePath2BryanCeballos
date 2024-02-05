@@ -17,10 +17,10 @@ struct Movie: Codable {
 
     enum CodingKeys: String, CodingKey {
         case title
-        case posterPath = "poster_path"  // Assuming the JSON key is "poster_path"
+        case posterPath = "poster_path" 
         case overview
-        case voteCount = "vote_count"    // Assuming the JSON key is "vote_count"
-        case voteAverage = "vote_average"// Assuming the JSON key is "vote_average"
+        case voteCount = "vote_count"  
+        case voteAverage = "vote_average"
         case popularity
     }
 }
