@@ -17,5 +17,4 @@ struct APIService {
         return URL(string: "\(baseURL)/movie/popular?api_key=\(apiKey)")
     }
     
-    // You can add more functions to construct different API endpoint URLs here
 }
