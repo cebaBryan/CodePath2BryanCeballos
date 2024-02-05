@@ -13,8 +13,6 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var voteAverageLabel: UILabel!
     @IBOutlet weak var popularityLabel: UILabel!
     
-
-    // The movie property to be set before the segue
     var movie: Movie?
 
     override func viewDidLoad() {
@@ -31,7 +29,6 @@ class MovieDetailViewController: UIViewController {
         voteAverageLabel?.text = "Average: \(movie.voteAverage)"
         popularityLabel?.text = "Popularity: \(movie.popularity)"
 
-        // Load the movie poster image
         let posterBaseURL = "https://image.tmdb.org/t/p/w500"
         let posterURLString = "\(posterBaseURL)\(movie.posterPath)"
         if let posterURL = URL(string: posterURLString) {
@@ -42,7 +39,6 @@ class MovieDetailViewController: UIViewController {
                     }
                 } else if let error = error {
                     print("Error loading image: \(error.localizedDescription)")
-                    // Optionally, you could set a placeholder image here if the image fails to load
                 }
             }.resume()
         } else {
