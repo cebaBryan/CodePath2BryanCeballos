@@ -5,7 +5,6 @@ import UIKit
 class MovieDetailViewController: UIViewController {
     // Outlets
     
-    
     @IBOutlet weak var moviePosterImageView: UIImageView!
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieOverviewLabel: UILabel!
