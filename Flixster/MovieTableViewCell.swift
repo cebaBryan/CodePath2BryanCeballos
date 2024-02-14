@@ -1,22 +1,24 @@
-// MovieTableViewCell.swift
+// 
+//  MovieTableViewCell.swift
+//  Flixster
+//
+//  Created by Bryan Ceballos on 2/4/24.
+//
 
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var movieTitleLabel: UILabel!
-    
+    @IBOutlet weak var movieTitleLabel: UILabel!   
     @IBOutlet weak var movieOverviewLabel: UILabel!
-
     @IBOutlet weak var moviePosterImageView: UIImageView!
     
     
     func configure(with movie: Movie) {
         movieTitleLabel.text = movie.title
         movieOverviewLabel.text = movie.overview
-        moviePosterImageView.image = UIImage(named: "placeholder") // Placeholder image
+        moviePosterImageView.image = UIImage(named: "placeholder")
         
-        // Check if the poster path is empty
         if movie.posterPath.isEmpty {
             moviePosterImageView.image = UIImage(named: "placeholder")
             return
@@ -29,16 +31,13 @@ class MovieTableViewCell: UITableViewCell {
             return
         }
         
-        // Image loading with URLSession
         URLSession.shared.dataTask(with: posterURL) { [weak self] data, response, error in
-            // Handle error or data being nil
             guard let data = data, let image = UIImage(data: data) else {
                 print("Error loading image: \(error?.localizedDescription ?? "Unknown error")")
                 return
             }
             
             DispatchQueue.main.async {
-                // Ensure the cell for which this image was loaded is still the cell to display this image
                 if self?.movieTitleLabel.text == movie.title {
                     self?.moviePosterImageView.image = image
                 }

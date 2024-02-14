@@ -5,8 +5,6 @@
 //  Created by Bryan Ceballos on 2/4/24.
 //
 
-// APIService.swift
-
 import Foundation
 
 struct APIService {
@@ -17,5 +15,4 @@ struct APIService {
         return URL(string: "\(baseURL)/movie/popular?api_key=\(apiKey)")
     }
     
-    // You can add more functions to construct different API endpoint URLs here
 }
