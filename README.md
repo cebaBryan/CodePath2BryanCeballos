@@ -1,26 +1,24 @@
-# Project 2 - *Flixster*
+# Project 3 - *Flixster Pt.2*
 
 Submitted by: **Bryan Ceballos**
 
-**Flixster** is a movie browsing app that allows the user to scroll through movies to see which ones are popular and to see if they are worth watching. 
+**Flixster** is an app that introduces networking and the usage of API to get information from a database.
+It now allows for a different orientation of the movies when viewing in poster mode.
 
-Time spent: **15** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] Users are able to see a customized app icon and launch screen
-- [X] Displays at least 5 different movies in a table view
-- [X] Can tap into detail view of movie with a full description, backdrop image, and title
+- [X] Implement network call and table view to display a list of movies currently playing (title, description, image)
+- [X] App has a collection view with the same list of movies
+- [X] Uses a tab bar controller to switch between collection view and table view screens
  
 The following **optional** features are implemented:
 
-- [X] Unique UI changes, such as background, font/color changes, etc.
-- [X] User implements a collection view
-- [X] User implemenets tab bar controller with at least two screens
-- [X] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [X] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
+- [ ] Make an additional network call to another end-point.	
+- [X] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
@@ -28,11 +26,14 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-(https://youtu.be/_EXA_iylMII)
+Here's a walkthrough of implemented user stories:
+
+https://www.youtube.com/watch?v=hF7d16paVic
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+During the building, there came a point where the poster view would display movie posters in two columns on the left and right of the screen.
+Then, at another point I ran into the problem that when I would scroll down up or down, it would make the pictures a lot bigger and would take up the whole screen.
 
 ## License
 
